@@ -10,4 +10,5 @@ https://towardsdatascience.com/a-beginners-guide-to-apache-spark-ff301cb4cd92
 
 Recommender on Apache Spark: \
 https://www.youtube.com/watch?v=58OjaDH2FI0 \
-https://www.slideshare.net/databricks/building-an-implicit-recommendation-engine-with-spark-with-sophie-watson
+https://www.slideshare.net/databricks/building-an-implicit-recommendation-engine-with-spark-with-sophie-watson \
+https://towardsdatascience.com/large-scale-jobs-recommendation-engine-using-implicit-data-in-pyspark-ccf8df5d910e
