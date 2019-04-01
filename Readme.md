@@ -6,6 +6,9 @@ https://medium.com/@GalarnykMichael/install-spark-on-windows-pyspark-4498a5d8d66
 Introduction on Apache Spark: \
 https://towardsdatascience.com/a-beginners-guide-to-apache-spark-ff301cb4cd92
 
+Map Reduce: \
+https://data-flair.training/blogs/hadoop-mapreduce-flow/
+
 
 
 Recommender on Apache Spark: \
