@@ -1,7 +1,8 @@
 ## Environment set up 
 Docker with jupyter: \
 https://medium.com/@suci/running-pyspark-on-jupyter-notebook-with-docker-602b18ac4494 \
-Need to replace localhost with docker ip by getting `docker-machine ip` on docker terminal
+Need to replace localhost with docker ip by getting `docker-machine ip` on docker terminal \
+overview of docker: https://www.dataquest.io/blog/docker-data-science/
 
 (NOT recommended) Installation on windows: \
 https://medium.com/@GalarnykMichael/install-spark-on-windows-pyspark-4498a5d8d66c
