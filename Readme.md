@@ -16,6 +16,9 @@ https://towardsdatascience.com/a-beginners-guide-to-apache-spark-ff301cb4cd92
 spark dataframe basic: \
 https://changhsinlee.com/pyspark-dataframe-basics/
 
+joins: \
+https://datascience-enthusiast.com/Python/big_data_spark_part2
+
 export csv: \
 https://fullstackml.com/how-to-export-data-frame-from-apache-spark-3215274ee9d6
 
