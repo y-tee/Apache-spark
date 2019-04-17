@@ -14,6 +14,10 @@ https://towardsdatascience.com/a-beginners-guide-to-apache-spark-ff301cb4cd92
 Map Reduce: \
 https://data-flair.training/blogs/hadoop-mapreduce-flow/
 
+### Data manipulation
+export csv: \
+https://fullstackml.com/how-to-export-data-frame-from-apache-spark-3215274ee9d6
+
 
 
 ## Recommender on Apache Spark: 
