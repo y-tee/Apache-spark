@@ -17,6 +17,7 @@ https://data-flair.training/blogs/hadoop-mapreduce-flow/
 ### Data manipulation
 spark dataframe basic: \
 https://changhsinlee.com/pyspark-dataframe-basics/
+
 export csv: \
 https://fullstackml.com/how-to-export-data-frame-from-apache-spark-3215274ee9d6
 
