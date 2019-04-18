@@ -8,7 +8,7 @@ Need to replace localhost with docker ip by getting `docker-machine ip` on docke
 overview of docker: https://www.dataquest.io/blog/docker-data-science/
 
 #### Running docker
-https://fenics.readthedocs.io/projects/containers/en/latest/jupyter.html
+https://fenics.readthedocs.io/projects/containers/en/latest/jupyter.html \
 https://medium.com/the-code-review/top-10-docker-commands-you-cant-live-without-54fb6377f481
 
 
