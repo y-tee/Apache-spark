@@ -36,7 +36,8 @@ https://towardsdatascience.com/a-beginners-guide-to-apache-spark-ff301cb4cd92
 
 ### Data manipulation
 spark dataframe basic: \
-https://changhsinlee.com/pyspark-dataframe-basics/
+https://changhsinlee.com/pyspark-dataframe-basics/ \
+https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/
 
 joins: \
 https://datascience-enthusiast.com/Python/big_data_spark_part2
