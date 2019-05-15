@@ -33,11 +33,12 @@ docker copy to local \
 Introduction on Apache Spark: \
 https://towardsdatascience.com/a-beginners-guide-to-apache-spark-ff301cb4cd92
 
-### Pandas to spark
-using arrow \
-https://gist.github.com/BryanCutler/bc73d573b7e46a984ff8b6edf228e298
 
 ### Data manipulation
+
+Pandas to spark dataframe using arrow \
+https://gist.github.com/BryanCutler/bc73d573b7e46a984ff8b6edf228e298
+
 spark dataframe basic: \
 https://changhsinlee.com/pyspark-dataframe-basics/ \
 https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/
