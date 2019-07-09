@@ -13,6 +13,9 @@ https://medium.com/the-code-review/top-10-docker-commands-you-cant-live-without-
 https://towardsdatascience.com/15-docker-commands-you-should-know-970ea5203421
 
 ###### Docker commands
+get docker ip \
+`sudo docker inspect <container-id> | grep '"IPAddress"' | head -n 1`
+
 run new docker container \
 `docker run -d -p 8888:8888 jupyter/pyspark-notebook`
 
