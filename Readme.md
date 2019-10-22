@@ -54,7 +54,7 @@ https://fullstackml.com/how-to-export-data-frame-from-apache-spark-3215274ee9d6
 
 ### Tuning Spark 
 Spark Submit \
-`spark-submit --master yarn --deploy-mode cluster --num-executors 3 --executor-cores 8 --executor-memory 16gb /home/davidooi/data/spark_test2.py`
+`spark-submit --master yarn --deploy-mode cluster --num-executors 3 --executor-cores 8 --executor-memory 16gb /directory/spark_test2.py`
 
 Spark Submit Configuration \
 https://spoddutur.github.io/spark-notes/distribution_of_executors_cores_and_memory_for_spark_application.html
