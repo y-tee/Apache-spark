@@ -63,10 +63,38 @@ Writing pyspark code \
 http://blog.appliedinformaticsinc.com/how-to-write-spark-applications-in-python/
 
 
-
-## Recommender on Apache Spark: 
+### Recommender on Apache Spark 
 good detail on rec on scalability in prod: https://medium.com/criteo-labs/sparkrsvd-open-sourced-by-criteo-for-large-scale-recommendation-engines-6695b649f519 \
 pyspark with emr cluster: https://towardsdatascience.com/use-pyspark-with-a-jupyter-notebook-in-an-aws-emr-cluster-e5abc4cc9bdd \
 https://www.youtube.com/watch?v=58OjaDH2FI0 \
 https://www.slideshare.net/databricks/building-an-implicit-recommendation-engine-with-spark-with-sophie-watson \
 https://towardsdatascience.com/large-scale-jobs-recommendation-engine-using-implicit-data-in-pyspark-ccf8df5d910e
+
+## Productionize Spark
+[Evaluation of all deploy methods of 2019](https://www.youtube.com/watch?v=APdH91p-lfU) \
+[mleap method](https://www.youtube.com/watch?v=KOehXxEgXFM) 
+
+### Spark Conda Environment
+Needs to duplicate Conda environment in all the other worker nodes so that occasional pandas code can run. \
+[Conda-pack](https://conda.github.io/conda-pack/index.html) to pack up old environment to be install in new environment without internet. \
+[Conda with spark](https://www.alkaline-ml.com/2018-07-02-conda-spark/)
+
+##### Steps to replicate:
+After packing current conda environment from source machine([Conda-pack](https://conda.github.io/conda-pack/index.html)), go to target machine
+
+``cd /mnt/disk1/davidooi`` \
+```mkdir -p andalan``` \
+```tar -xzf andalan_env.tar.gz -C andalan``` \
+```source bin/activate``` at /mnt/disk1/davidooi/andalan
+
+``source deactivate`` to deactivate environment
+
+##### Spark Submit:
+cluster-mode: \
+``spark-submit --master yarn --conf spark.yarn.appMasterEnv.PYSPARK_PYTHON=/mnt/disk1/davidooi/andalan/bin/python3 --deploy-mode cluster --executor-cores 7 --num-executors 4 --executor-memory 16g --archives /mnt/disk1/davidooi/andalan_env.tar.gz /mnt/disk1/davidooi/spark_test2s_long.py``
+
+client-mode: \
+``PYSPARK_PYTHON=/mnt/disk1/davidooi/andalan/bin/python3 spark-submit --conf spark.yarn.appMasterEnv.PYSPARK_PYTHON=/mnt/disk1/davidooi/andalan/bin/python3    --master yarn --deploy-mode client  --archives /mnt/disk1/davidooi/andalan_env.tar.gz   /mnt/disk1/davidooi/spark_test2s.py``
+
+spark-shell: \
+``PYSPARK_DRIVER_PYTHON=/mnt/disk1/davidooi/andalan/bin/python3 PYSPARK_PYTHON=/mnt/disk1/davidooi/andalan/bin/python3 pyspark --conf spark.yarn.appMasterEnv.PYSPARK_PYTHON=/mnt/disk1/davidooi/andalan/bin/python3 --master yarn --deploy-mode client --archives /mnt/disk1/davidooi/andalan_env.tar.gz``
