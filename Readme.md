@@ -71,7 +71,7 @@ https://www.slideshare.net/databricks/building-an-implicit-recommendation-engine
 https://towardsdatascience.com/large-scale-jobs-recommendation-engine-using-implicit-data-in-pyspark-ccf8df5d910e
 
 ## Productionize Spark
-[Evaluation of all deploy methods of 2019](https://www.youtube.com/watch?v=APdH91p-lfU) \
+[Evaluation of all deploy methods of 2019, more detailed implementations of ONNX](https://www.youtube.com/watch?v=APdH91p-lfU) \
 [mleap method](https://www.youtube.com/watch?v=KOehXxEgXFM) 
 
 ### Spark Conda Environment
