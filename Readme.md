@@ -20,7 +20,7 @@ run new docker container \
 `docker run -d -p 8888:8888 jupyter/pyspark-notebook`
 
 check docker \
-`docker ps -q`
+`docker ps -a`
 
 check docker logs and link \
 `docker logs <container-id>`
@@ -28,7 +28,11 @@ check docker logs and link \
 docker copy to local \
 `docker cp <docker-id>:/home/jovyan/<filename> "<path>"`
 
+### Building flask docker image
 
+[link](https://runnable.com/docker/python/dockerize-your-flask-application)
+
+If there's need to read other files in flask app, just name the path /app/filename (with condition of docker file dir named /app)
 
 
 
